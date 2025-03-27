@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa do Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 Caixa do Supermercado</h1>
+        <div id="menu">
+            <button onclick="iniciarJogo(false)">Novo Jogo</button>
+            <button onclick="iniciarJogo(true)">Continuar</button>
+        </div>
+        <div id="jogo" style="display: none;">
+            <p id="nivel"></p>
+            <p id="produto"></p>
+            <p id="desconto"></p>
+            <p id="pagamento"></p>
+            <input type="number" id="trocoInput" placeholder="Digite o troco">
+            <button onclick="verificarTroco()">Confirmar</button>
+            <button onclick="salvarJogo()">💾 Salvar Jogo</button>
+            <p id="mensagem"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
